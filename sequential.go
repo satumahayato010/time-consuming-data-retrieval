@@ -29,7 +29,7 @@ func main() {
 	productDB = make(map[int]string, 100)
 
 	for i := 0; i < 100; i++ {
-		productDB[i] = fmt.Sprintf("Product %d\n", i)
+		productDB[i] = fmt.Sprintf("Product %d", i)
 	}
 
 	start := time.Now()
