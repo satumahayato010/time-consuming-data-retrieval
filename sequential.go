@@ -36,6 +36,7 @@ func main() {
 	fmt.Println(start)
 
 	getProduct()
+	getProductConcurrent()
 	fmt.Println(time.Now())
 
 	end := time.Since(start)
