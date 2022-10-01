@@ -7,7 +7,7 @@ import (
 func getProductConcurrent() []string {
 	r := make([]string, 0, 100)
 
-	semaphore := make(chan struct{}, 10)
+	semaphore := make(chan struct{}, 5)
 
 	var wg sync.WaitGroup
 	var mu sync.Mutex
